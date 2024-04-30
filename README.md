@@ -155,3 +155,7 @@ Using the Git Module is not required but I strongly recommend it, it makes synci
 
 Do not forget to add the directory (e.g: "ts/") to your .gitignore. 
 
+Portfolio: https://www.thomasberrens.dev/
+Linkedin: https://www.linkedin.com/in/thomas-berrens-4698141a4/
+Twitter: https://twitter.com/thomas_berrens
+
