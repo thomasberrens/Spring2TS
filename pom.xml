@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.spring2ts</groupId>
+    <groupId>nl.thomasberrens</groupId>
     <artifactId>spring2ts</artifactId>
     <version>1.0</version>
 
@@ -34,8 +34,8 @@
     <distributionManagement>
         <repository>
             <id>github</id>
-            <name>GitHub Spring2TS Apache Maven Packages</name>
-            <url>https://maven.pkg.github.com/Spring2TS/Spring2TS</url>
+            <name>GitHub thomasberrens Apache Maven Packages</name>
+            <url>https://maven.pkg.github.com/thomasberrens/Spring2TS</url>
         </repository>
     </distributionManagement>
 
@@ -59,12 +59,6 @@
             <groupId>org.eclipse.jgit</groupId>
             <artifactId>org.eclipse.jgit</artifactId>
             <version>6.7.0.202309050840-r</version>
-        </dependency>
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <version>1.18.30</version>
-            <scope>provided</scope>
         </dependency>
     </dependencies>
 

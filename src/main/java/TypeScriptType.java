@@ -1,11 +1,8 @@
-import lombok.Getter;
-
 import java.lang.reflect.Type;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-@Getter
 public class TypeScriptType {
     private final List<Type> javaTypes;
     private final String tsType;
@@ -13,6 +10,14 @@ public class TypeScriptType {
     public TypeScriptType(List<Type> javaTypes, String tsType) {
         this.javaTypes = javaTypes;
         this.tsType = tsType;
+    }
+
+    public String getTsType() {
+        return tsType;
+    }
+
+    public List<Type> getJavaTypes() {
+        return javaTypes;
     }
 
     private boolean shouldScanPackage(List<String> packagesToScan, String packageName) {

@@ -1,6 +1,5 @@
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.Transient;
-import lombok.Getter;
 
 
 import java.io.IOException;
@@ -15,12 +14,20 @@ import java.nio.file.Paths;
 import java.util.*;
 
 public class TypeScriptInterfaceGenerator {
-    @Getter
+
     private final Set<String> generatedInterfaces = new HashSet<>();
     private final List<String> packagesToScan;
 
     public TypeScriptInterfaceGenerator(List<String> packagesToScan) {
         this.packagesToScan = packagesToScan;
+    }
+
+    public Set<String> getGeneratedInterfaces() {
+        return generatedInterfaces;
+    }
+
+    public List<String> getPackagesToScan() {
+        return packagesToScan;
     }
 
     private boolean shouldScanPackage(String packageName) {

@@ -1,4 +1,4 @@
-import lombok.Getter;
+
 import org.springframework.data.domain.Pageable;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -21,7 +21,6 @@ public class AxiosFileGenerator {
 
     private final RequestMappingHandlerMapping handlerMapping;
 
-    @Getter
     private final List<String> defaultFunctions = new ArrayList<>();
 
     private final TypeScriptInterfaceGenerator typeScriptInterfaceGenerator;
@@ -32,6 +31,10 @@ public class AxiosFileGenerator {
 
         addDefaultFunction("export const setDefaultHeader = (header: string, value: string) => axios.defaults.headers.common[header] = value;");
         addDefaultFunction("export const setBaseUrl = (url: string) => axios.defaults.baseURL = url;");
+    }
+
+    public List<String> getDefaultFunctions() {
+        return defaultFunctions;
     }
 
     public void addDefaultFunction(String function) {
