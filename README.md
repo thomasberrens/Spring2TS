@@ -11,7 +11,7 @@ This tool automatically generates TypeScript interfaces and Axios functions base
 
 * Enum Support.
 
-* Supports Pageable, @JsonIgnore, @Transient, @PathVariable, @RequestParam.
+* Supports Pageable, @JsonIgnore, @Transient, @RequestBody, @PathVariable, @RequestParam.
 
 * Axios Integration: Generates ready-to-use Axios functions for seamless API calls.
 
