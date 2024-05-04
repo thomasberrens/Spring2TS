@@ -179,5 +179,3 @@ Ensure to replace `"nl.thomasberrens"` with your package name. Also, consider ad
 * **Twitter**: [Thomas Berrens on Twitter](https://twitter.com/thomas_berrens)
 
 ---
-
-This version includes the examples and "Becomes" sections back into the README while maintaining improved formatting and organization for readability.
